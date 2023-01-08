@@ -1,0 +1,8 @@
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x86\Debug\SecurityService.exe.config
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x86\Debug\SecurityService.exe
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x86\Debug\SecurityService.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x86\Debug\ServiceContracts.dll
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x86\Debug\ServiceContracts.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\obj\x86\Debug\SecurityService.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\obj\x86\Debug\SecurityService.exe
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\obj\x86\Debug\SecurityService.pdb

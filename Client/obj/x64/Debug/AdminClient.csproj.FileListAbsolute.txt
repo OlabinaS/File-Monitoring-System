@@ -1,0 +1,8 @@
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\bin\x64\Debug\AdminClient.exe.config
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\bin\x64\Debug\AdminClient.exe
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\bin\x64\Debug\AdminClient.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\bin\x64\Debug\ServiceContracts.dll
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\bin\x64\Debug\ServiceContracts.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\obj\x64\Debug\AdminClient.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\obj\x64\Debug\AdminClient.exe
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\AdminClient\obj\x64\Debug\AdminClient.pdb

@@ -1,0 +1,18 @@
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x64\Debug\SecurityService.exe.config
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x64\Debug\SecurityService.exe
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x64\Debug\SecurityService.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x64\Debug\ServiceContracts.dll
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\bin\x64\Debug\ServiceContracts.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.exe
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.pdb
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\bin\x64\Debug\SecurityService.exe.config
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\bin\x64\Debug\SecurityService.exe
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\bin\x64\Debug\SecurityService.pdb
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\bin\x64\Debug\ServiceContracts.dll
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\bin\x64\Debug\ServiceContracts.pdb
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.csprojAssemblyReference.cache
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.csproj.CoreCompileInputs.cache
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.csproj.CopyComplete
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.exe
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\SecurityService\obj\x64\Debug\SecurityService.pdb

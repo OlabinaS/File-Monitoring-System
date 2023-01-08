@@ -1,0 +1,10 @@
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\bin\x64\Debug\Client.exe.config
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\bin\x64\Debug\Client.exe
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\bin\x64\Debug\Client.pdb
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\bin\x64\Debug\ServiceContracts.dll
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\bin\x64\Debug\ServiceContracts.pdb
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\obj\x64\Debug\Client.csprojAssemblyReference.cache
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\obj\x64\Debug\Client.csproj.CoreCompileInputs.cache
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\obj\x64\Debug\Client.csproj.CopyComplete
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\obj\x64\Debug\Client.exe
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\AdminClient\obj\x64\Debug\Client.pdb
