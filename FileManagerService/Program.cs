@@ -22,7 +22,8 @@ namespace FileManagerService
 			string address = "net.tcp://localhost:9999/FileManagerService";
 
 			ServiceHost host = new ServiceHost(typeof(FileManager));
-			host.AddServiceEndpoint(typeof(IFileManagerService), binding, address);
+			host.AddServiceEndpoint(typeof(IFileManagerServiceAddChange), binding, address);
+			host.AddServiceEndpoint(typeof(IFileManagerServiceRemove), binding, address);
 
 			host.Open();
 

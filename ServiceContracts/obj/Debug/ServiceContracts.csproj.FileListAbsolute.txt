@@ -10,3 +10,9 @@ C:\Users\Zorana\Downloads\Vezba_1_1_template\Vezba01\ServiceContracts\obj\Debug\
 C:\Users\Zorana\Downloads\Vezba_1_1_template\Vezba01\ServiceContracts\obj\Debug\ServiceContracts.csproj.CoreCompileInputs.cache
 C:\Users\Zorana\Downloads\Vezba_1_1_template\Vezba01\ServiceContracts\obj\Debug\ServiceContracts.dll
 C:\Users\Zorana\Downloads\Vezba_1_1_template\Vezba01\ServiceContracts\obj\Debug\ServiceContracts.pdb
+C:\Users\user\Desktop\SBES\SBES\ServiceContracts\bin\Debug\ServiceContracts.dll
+C:\Users\user\Desktop\SBES\SBES\ServiceContracts\bin\Debug\ServiceContracts.pdb
+C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.dll
+C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.pdb

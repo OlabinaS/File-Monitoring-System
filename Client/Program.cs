@@ -16,8 +16,9 @@ namespace Client
  
 			using (ClientProxy proxy = new ClientProxy(binding, address))
 			{
-
-			}
+                proxy.AddFile("file.txt", "Moj najlepsi fajl");
+                proxy.ChangeFile("file.txt", "Moj NAJLEPSI FAJL");
+            }
 
 			Console.ReadLine();
 		}
