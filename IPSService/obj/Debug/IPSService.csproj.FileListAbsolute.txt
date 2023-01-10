@@ -1,0 +1,11 @@
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\bin\Debug\IPSService.exe.config
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\bin\Debug\IPSService.exe
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\bin\Debug\IPSService.pdb
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\bin\Debug\ServiceContracts.dll
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\bin\Debug\ServiceContracts.pdb
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\obj\Debug\IPSService.csproj.AssemblyReference.cache
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\obj\Debug\IPSService.csproj.SuggestedBindingRedirects.cache
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\obj\Debug\IPSService.csproj.CoreCompileInputs.cache
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\obj\Debug\IPSService.csproj.CopyComplete
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\obj\Debug\IPSService.exe
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\IPSService\obj\Debug\IPSService.pdb

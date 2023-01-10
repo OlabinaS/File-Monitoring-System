@@ -16,3 +16,9 @@ C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.cspr
 C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.dll
 C:\Users\user\Desktop\SBES\SBES\ServiceContracts\obj\Debug\ServiceContracts.pdb
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\ServiceContracts\bin\Debug\ServiceContracts.dll
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\ServiceContracts\bin\Debug\ServiceContracts.pdb
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\ServiceContracts\obj\Debug\ServiceContracts.csproj.AssemblyReference.cache
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\ServiceContracts\obj\Debug\ServiceContracts.csproj.CoreCompileInputs.cache
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\ServiceContracts\obj\Debug\ServiceContracts.dll
+D:\Coek\FTN\7. Semestar\Sigurnost i bezbednost elektroenergetskog softvera\Development\ServiceContracts\obj\Debug\ServiceContracts.pdb
