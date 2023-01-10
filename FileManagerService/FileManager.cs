@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using ServiceContracts;
 using System.ServiceModel;
 using static System.Net.Mime.MediaTypeNames;
+using System.Security.Permissions;
 
 namespace FileManagerService
 {
@@ -16,6 +17,7 @@ namespace FileManagerService
 
         public static string path = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\Files\\"));
 
+        [PrincipalPermission(SecurityAction.Demand, Role="Managment")]
         public void AddFile(string name, string text)
         {
             if (!File.Exists(Path.Combine(path, name)))
@@ -29,6 +31,8 @@ namespace FileManagerService
 
         }
 
+        [PrincipalPermission(SecurityAction.Demand, Role = "Managment")]
+
         public void ChangeFile(string name, string text)
         {
             if (File.Exists(Path.Combine(path, name)))
@@ -40,6 +44,8 @@ namespace FileManagerService
                 throw new FaultException<FileExceptions>(new FileExceptions("Error: File not changed"));
             }
         }
+
+        [PrincipalPermission(SecurityAction.Demand, Role = "Admin")]
 
         public void RemoveFile(string name)
         {
