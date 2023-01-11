@@ -9,17 +9,17 @@ namespace IPSService
 {
     public class IPSService : IIPSService
     {
-        public void LogCritical()
+        public void LogCritical(Alarm alarm)
         {
             throw new NotImplementedException();
         }
 
-        public void LogInformation()
+        public void LogInformation(Alarm alarm)
         {
             throw new NotImplementedException();
         }
 
-        public void LogWarning()
+        public void LogWarning(Alarm alarm)
         {
             throw new NotImplementedException();
         }

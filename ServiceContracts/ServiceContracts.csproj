@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alarm.cs" />
     <Compile Include="FileExceptions.cs" />
     <Compile Include="IFileManagerServiceAddChange.cs" />
     <Compile Include="IFileManagerServiceRemove.cs" />
