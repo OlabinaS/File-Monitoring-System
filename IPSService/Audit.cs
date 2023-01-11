@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ServiceContracts;
 namespace IPSService
 {
 
@@ -29,12 +29,12 @@ namespace IPSService
             }
         }
 
-        public static void CriticalLog(string path, DateTime time, string name)
+        public static void CriticalLog(Alarm alarm)
         {
             if (customLog != null)
             {
                 string critical = AuditEvents.Critical;
-                string message = String.Format(critical,name, path, time.ToString());
+                string message = String.Format(critical, alarm.Filename, alarm.Path, alarm.TimeStamp.ToString());
                 customLog.WriteEntry(message, EventLogEntryType.Error);
             }
             else
@@ -44,12 +44,12 @@ namespace IPSService
             }
         }
 
-        public static void InformationLog(string path, DateTime time, string name)
+        public static void InformationLog(Alarm alarm)
         {
             if (customLog != null)
             {
                 string information = AuditEvents.Information;
-                string message = String.Format(information, name, path, time.ToString());
+                string message = String.Format(information, alarm.Filename, alarm.Path, alarm.TimeStamp.ToString());
                 customLog.WriteEntry(message, EventLogEntryType.Information);
             }
             else
@@ -59,12 +59,12 @@ namespace IPSService
             }
         }
 
-        public static void WarningLog(string path, DateTime time, string name)
+        public static void WarningLog(Alarm alarm)
         {
             if (customLog != null)
             {
                 string warning = AuditEvents.Warning;
-                string message = String.Format(warning, name, path, time.ToString());
+                string message = String.Format(warning, alarm.Filename, alarm.Path, alarm.TimeStamp.ToString());
                 customLog.WriteEntry(message, EventLogEntryType.Warning);
             }
             else
