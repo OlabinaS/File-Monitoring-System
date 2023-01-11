@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "Manager\Manager.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPSService", "IPSService\IPSService.csproj", "{302DD4E5-0FBE-46E6-9D27-86F5707F5E88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIM", "FIM\FIM.csproj", "{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{302DD4E5-0FBE-46E6-9D27-86F5707F5E88}.Release|x64.Build.0 = Release|Any CPU
 		{302DD4E5-0FBE-46E6-9D27-86F5707F5E88}.Release|x86.ActiveCfg = Release|Any CPU
 		{302DD4E5-0FBE-46E6-9D27-86F5707F5E88}.Release|x86.Build.0 = Release|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Debug|x64.Build.0 = Debug|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Debug|x86.Build.0 = Debug|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Release|x64.ActiveCfg = Release|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Release|x64.Build.0 = Release|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Release|x86.ActiveCfg = Release|Any CPU
+		{4DB3CE5C-C9FD-4AA4-90CB-6C7E574B4E50}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

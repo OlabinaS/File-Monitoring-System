@@ -72,6 +72,7 @@
     <Compile Include="FileExceptions.cs" />
     <Compile Include="IFileManagerServiceAddChange.cs" />
     <Compile Include="IFileManagerServiceRemove.cs" />
+    <Compile Include="IFimSerivce.cs" />
     <Compile Include="IIPSService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users.cs" />
