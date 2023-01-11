@@ -1,5 +1,4 @@
-﻿using System;
-using System.ServiceModel;
+﻿using System.ServiceModel;
 
 namespace ServiceContracts
 {
@@ -7,12 +6,12 @@ namespace ServiceContracts
     public interface IIPSService
     {
         [OperationContract]
-        void LogCritical();
+        void LogCritical(Alarm alarm);
 
         [OperationContract]
-        void LogInformation();
+        void LogInformation(Alarm alarm);
 
         [OperationContract]
-        void LogWarning();
+        void LogWarning(Alarm alarm);
     }
 }
