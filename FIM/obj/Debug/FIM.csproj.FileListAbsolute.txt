@@ -1,0 +1,3 @@
+C:\Users\user\Desktop\SBES\SBES\FIM\obj\Debug\FIM.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\SBES\SBES\FIM\obj\Debug\FIM.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\SBES\SBES\FIM\obj\Debug\FIM.csproj.CoreCompileInputs.cache
