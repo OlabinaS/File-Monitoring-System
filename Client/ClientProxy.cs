@@ -17,11 +17,11 @@ namespace Client
             factory = this.CreateChannel();
         }
 
-        public void AddFile(string name, string text)
+        public void AddFile(string name, byte[] signature, string text)
         {
             try
             {
-                factory.AddFile(name, text);
+                factory.AddFile(name, signature, text);
                 Console.WriteLine("File added.");
             }
             catch (FaultException<FileExceptions> e)
@@ -34,11 +34,11 @@ namespace Client
             }
         }
 
-        public void ChangeFile(string name, string text)
+        public void ChangeFile(string name, byte[] signature, string text)
         {
             try
             {
-                factory.ChangeFile(name, text);
+                factory.ChangeFile(name, signature, text);
                 Console.WriteLine("File changed");
             }
             catch (FaultException<FileExceptions> e)

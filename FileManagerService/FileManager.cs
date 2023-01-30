@@ -18,11 +18,11 @@ namespace FileManagerService
         public static string path = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\Files\\"));
 
         [PrincipalPermission(SecurityAction.Demand, Role="Managment")]
-        public void AddFile(string name, string text)
+        public void AddFile(string name, byte[] signature, string text)
         {
             if (!File.Exists(Path.Combine(path, name)))
             {
-                File.WriteAllText(Path.Combine(path, name), text);
+                File.WriteAllText(Path.Combine(path, name), text + '\n' + Convert.ToBase64String(signature));
             }
             else
             {
@@ -32,12 +32,11 @@ namespace FileManagerService
         }
 
         [PrincipalPermission(SecurityAction.Demand, Role = "Managment")]
-
-        public void ChangeFile(string name, string text)
+        public void ChangeFile(string name, byte[] signature, string text)
         {
             if (File.Exists(Path.Combine(path, name)))
             {
-                File.WriteAllText(Path.Combine(path, name), text);
+                File.WriteAllText(Path.Combine(path, name), text + '\n' + Convert.ToBase64String(signature));
             }
             else
             {
@@ -46,7 +45,6 @@ namespace FileManagerService
         }
 
         [PrincipalPermission(SecurityAction.Demand, Role = "Admin")]
-
         public void RemoveFile(string name)
         {
             if (!File.Exists(Path.Combine(path, name)))
