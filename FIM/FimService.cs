@@ -48,27 +48,44 @@ namespace FIM
 
         }
 
-        private Alarm GetAlarm(string name)
+    private Alarm GetAlarm(string name)
+    {
+
+        switch (ReadEventLog(name))
         {
-            //ovo jos ne radi
-            int cnt;
+            case -1:
+                return null;
 
-            switch ()
-            {
-                case -1:
-                    return null;
+            case 0:
+                return new Alarm(DateTime.Now, path, AuditEventTypes.Information, name);
 
-                case 0:
-                    return new Alarm(DateTime.Now, path, AuditEventTypes.Information, name);
+            case 1:
+                return new Alarm(DateTime.Now, path, AuditEventTypes.Warning, name);
 
-                case 1:
-                    return new Alarm(DateTime.Now, path, AuditEventTypes.Warning, name);
-
-                default:
-                    return new Alarm(DateTime.Now, path, AuditEventTypes.Critical, name);
-            }
+            default:
+                return new Alarm(DateTime.Now, path, AuditEventTypes.Critical, name);
         }
+    }
 
+
+    public int ReadEventLog(string name)
+    {
+        try
+        {
+            EventLog log = new EventLog { Log = "SBES-LOG-NAME" };
+            int count = 0;
+
+            count = log.Entries
+                        .Cast<EventLogEntry>()
+                        .Count(entry => entry.Message.Contains("[" + name + "]"));
+            return count;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Reading log error: {0}", ex.Message);
+            return -1;
+        }
+    }
 
     }
 }
