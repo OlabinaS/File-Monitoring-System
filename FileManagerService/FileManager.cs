@@ -26,7 +26,7 @@ namespace FileManagerService
             }
             else
             {
-                throw new FaultException<FileExceptions>(new FileExceptions("Error: File not added"));
+                throw new FaultException<FileExceptions>(new FileExceptions("Error: File already exist, you can just change it!"));
             }
 
         }
@@ -40,7 +40,7 @@ namespace FileManagerService
             }
             else
             {
-                throw new FaultException<FileExceptions>(new FileExceptions("Error: File not changed"));
+                throw new FaultException<FileExceptions>(new FileExceptions("Error: File doesn't exist, you must add it first!"));
             }
         }
 

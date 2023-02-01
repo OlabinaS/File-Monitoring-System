@@ -51,5 +51,14 @@ namespace Client
             }
         }
 
+        public void Dispose()
+		{
+            if(factory != null)
+			{
+                factory = null;
+			}
+            this.Close();
+		}
+
     }
 }
