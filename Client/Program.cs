@@ -25,12 +25,58 @@ namespace Client
 
 				byte[] signature;
 
+				while(true)
+				{
+					Console.WriteLine("---------------------------------------------");
+					Console.WriteLine("1.Add new file\n2.Change file\n0.Exit!");
+					Console.Write("Enter an option: ");
+
+					string optionStr = Console.ReadLine();
+					int option;
+					if(!int.TryParse(optionStr, out option))
+					{
+						continue;
+					}
+
+					switch(option)
+					{
+						case 1:
+							Console.WriteLine("Enter a name of file: ");
+							string filename = Console.ReadLine();
+							Console.WriteLine("Enter a text: ");
+							string text = Console.ReadLine();
+
+							signature = DigitalSignature.Create(text, HashAlgorithm.SHA1, Cert);
+							proxy.AddFile(filename, signature, text);
+							break;
+
+						case 2:
+							Console.WriteLine("Enter a name of file: ");
+							filename = Console.ReadLine();
+							Console.WriteLine("Enter a text: ");
+							text = Console.ReadLine();
+
+							signature = DigitalSignature.Create(text, HashAlgorithm.SHA1, Cert);
+							proxy.AddFile(filename, signature, text);
+							break;
+
+						case 0:
+							Console.WriteLine("Press any key to exit");
+							Console.ReadLine();
+							break;
+
+						default:
+							Console.WriteLine("Enter the option number!!");
+							break;
+					}
+
+				}
 
                 //proxy.AddFile("file.txt", "Moj najlepsi fajl");
                 //proxy.ChangeFile("file.txt", "Moj NAJLEPSI FAJL");
             }
 
-			Console.ReadLine();
+			//Console.ReadLine();
 		}
 	}
 }
