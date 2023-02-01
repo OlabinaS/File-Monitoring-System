@@ -1,0 +1,5 @@
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\bin\x86\Debug\ServiceContracts.dll
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\bin\x86\Debug\ServiceContracts.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\obj\x86\Debug\ServiceContracts.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\obj\x86\Debug\ServiceContracts.dll
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\obj\x86\Debug\ServiceContracts.pdb

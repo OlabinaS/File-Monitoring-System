@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\bin\x64\Debug\ServiceContracts.dll
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\bin\x64\Debug\ServiceContracts.pdb
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\obj\x64\Debug\ServiceContracts.dll
+C:\Users\Admin\Desktop\VEZBE 2016\Vezba_1\ServiceContracts\ServiceContracts\obj\x64\Debug\ServiceContracts.pdb
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\ServiceContracts\ServiceContracts\bin\x64\Debug\ServiceContracts.dll
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\ServiceContracts\ServiceContracts\bin\x64\Debug\ServiceContracts.pdb
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\ServiceContracts\ServiceContracts\obj\x64\Debug\ServiceContracts.csprojAssemblyReference.cache
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\ServiceContracts\ServiceContracts\obj\x64\Debug\ServiceContracts.csproj.CoreCompileInputs.cache
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\ServiceContracts\ServiceContracts\obj\x64\Debug\ServiceContracts.dll
+E:\POSAO\FAX\SBES\2019-2020\Vezba_1_1_template\Vezba_1\ServiceContracts\ServiceContracts\obj\x64\Debug\ServiceContracts.pdb

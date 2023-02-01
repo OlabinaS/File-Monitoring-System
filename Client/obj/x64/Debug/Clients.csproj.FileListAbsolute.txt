@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\VEZBE 2016\VEZBA_1_2016\Vezba_1\AdminClient\bin\x64\Debug\AdminClient.exe.config
+C:\Users\Admin\Desktop\VEZBE 2016\VEZBA_1_2016\Vezba_1\AdminClient\obj\x64\Debug\AdminClient.exe
+C:\Users\Admin\Desktop\VEZBE 2016\VEZBA_1_2016\Vezba_1\AdminClient\obj\x64\Debug\AdminClient.pdb
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_1\AdminClient\bin\x64\Debug\AdminClient.exe.config
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_1\AdminClient\obj\x64\Debug\AdminClient.exe
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_1\AdminClient\obj\x64\Debug\AdminClient.pdb
