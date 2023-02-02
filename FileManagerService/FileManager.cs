@@ -16,6 +16,8 @@ namespace FileManagerService
     {
 
         public static string path = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\Files\\"));
+        public static string config = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\FIM\\FimConfig"));
+
 
         [PrincipalPermission(SecurityAction.Demand, Role="Managment")]
         public void AddFile(string name, byte[] signature, string text)
@@ -23,6 +25,7 @@ namespace FileManagerService
             if (!File.Exists(Path.Combine(path, name)))
             {
                 File.WriteAllText(Path.Combine(path, name), text + '\n' + Convert.ToBase64String(signature));
+                File.AppendAllText(config, $"\r\n{name}");
             }
             else
             {
@@ -50,7 +53,9 @@ namespace FileManagerService
             if (!File.Exists(Path.Combine(path, name)))
             {
                 File.Delete(Path.Combine(path, name));
-
+                //izvlacimo one koji nisu izbrisani i s njima popunjavamo config
+                List<string> nonDeleted = File.ReadAllLines(config).Where(file => !file.Equals(name)).ToList();
+                File.WriteAllLines(config, nonDeleted);
             }
             else
             {
