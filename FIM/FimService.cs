@@ -20,7 +20,7 @@ namespace FIM
         public Alarm VerifySignature(string name)
         {
             //izvlaci se sertifikat iz trusted people koji sluzi za validno potpisivanje
-            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "client_sign");
+            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "valid_sign");
 
             var lines = File.ReadLines(path + name);
 

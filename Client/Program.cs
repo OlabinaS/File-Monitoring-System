@@ -7,6 +7,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using Manager;
+using System.Security.Principal;
 
 namespace Client
 {
@@ -17,8 +18,26 @@ namespace Client
 			NetTcpBinding binding = new NetTcpBinding();
 			string address = "net.tcp://localhost:9999/FileManagerService";
 
-			string signCertCN = Formatter.Parser(WindowsIdentity.GetCurrent().Name.ToLower() + "_sign");
- 
+			string signCertCN = "";
+
+			WindowsIdentity identity = WindowsIdentity.GetCurrent();
+			WindowsPrincipal principal = new WindowsPrincipal(identity);
+
+			//postoje 2 grupe korisnika valid i nonvalid
+			foreach(var group in identity.Groups)
+			{
+                var account = (NTAccount)group.Translate(typeof(NTAccount));
+				if (account.Value == "Valid" || account.Value == "Nonvalid")
+				{
+					//ovde dodelimo vrednost subjectName-a na osnovu grupe kojoj korisnik pripada
+					signCertCN = account.Value.ToLower() + "_sign";
+				}
+				else {
+					signCertCN = "NonExistingCert";
+				}
+
+            }
+
 			using (ClientProxy proxy = new ClientProxy(binding, address))
 			{
 				X509Certificate2 Cert = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, signCertCN);
