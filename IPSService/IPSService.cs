@@ -7,21 +7,31 @@ using System.Threading.Tasks;
 
 namespace IPSService
 {
-    public class IPSService : IIPSService
+    public class IPSService : IIPSService, IDisposable
     {
-        public void LogCritical(Alarm alarm)
+        public void Dispose()
         {
             throw new NotImplementedException();
+        }
+
+        public void LogCritical(Alarm alarm)
+        {
+            Console.WriteLine("Critical");
+            Audit.CriticalLog(alarm);
+            
         }
 
         public void LogInformation(Alarm alarm)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Information");
+            Audit.InformationLog(alarm);
         }
+
 
         public void LogWarning(Alarm alarm)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Warning");
+            Audit.WarningLog(alarm);
         }
     }
 }

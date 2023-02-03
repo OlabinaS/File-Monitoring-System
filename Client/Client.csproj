@@ -79,6 +79,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Manager\Manager.csproj">
+      <Project>{d5d20892-b864-40f7-be97-21b37d20ff73}</Project>
+      <Name>Manager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ServiceContracts\ServiceContracts.csproj">
       <Project>{51904A43-E6D9-41E9-B2FD-4210EE2124C1}</Project>
       <Name>ServiceContracts</Name>
