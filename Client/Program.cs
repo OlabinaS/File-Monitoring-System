@@ -27,7 +27,11 @@ namespace Client
 			foreach(var group in identity.Groups)
 			{
                 var account = (NTAccount)group.Translate(typeof(NTAccount));
-				if (account.Value == "Valid" || account.Value == "Nonvalid")
+
+				string[] gr = Convert.ToString(account.Value).Split('\\');
+				//nekiKod\ImeGrupe
+				if (gr.Count() > 1)
+				if (account.Value == "Valid"/*Ja mislim da ovde treba samo Managment grupa i nista vise*/ || account.Value == "Nonvalid")
 				{
 					//ovde dodelimo vrednost subjectName-a na osnovu grupe kojoj korisnik pripada
 					signCertCN = account.Value.ToLower() + "_sign";
