@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/Client/obj
+/FileManagerService/obj/Release
+/FIM/obj
+/Manager/obj
