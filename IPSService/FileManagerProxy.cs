@@ -24,8 +24,8 @@ namespace IPSService
             {
                 factory.RemoveFile(name);
             }
-            catch (Exception e) when (e is FaultException<FileExceptions> || e is FaultException<FileOperationsException>)
-            {
+            catch (FaultException<FileExceptions> e) 
+            { 
                 Console.WriteLine($"{e.Detail.Message}");
             }
             catch (Exception e)

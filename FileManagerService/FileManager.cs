@@ -16,7 +16,7 @@ namespace FileManagerService
     {
 
         public static string path = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\Files\\"));
-        public static string config = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\FIM\\FimConfig"));
+        public static string config = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\FIM\\FimConfig.txt"));
 
 
         [PrincipalPermission(SecurityAction.Demand, Role="Managment")]

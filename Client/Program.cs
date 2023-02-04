@@ -30,22 +30,26 @@ namespace Client
 
 				string[] gr = Convert.ToString(account.Value).Split('\\');
 				//nekiKod\ImeGrupe
-				if (gr.Count() > 1)
-				if (account.Value == "Valid"/*Ja mislim da ovde treba samo Managment grupa i nista vise*/ || account.Value == "Nonvalid")
-				{
-					//ovde dodelimo vrednost subjectName-a na osnovu grupe kojoj korisnik pripada
-					signCertCN = account.Value.ToLower() + "_sign";
-				}
-				else {
-					signCertCN = "NonExistingCert";
-				}
+				/*if (gr.Count() > 1)
+                {
+					if (gr[1] == "Valid" || gr[1] == "Nonvalid")
+					{
+						//ovde dodelimo vrednost subjectName-a na osnovu grupe kojoj korisnik pripada
+						signCertCN = gr[1].ToLower() + "_sign";
+					}
+					else {
+						signCertCN = "NonExistingCert";
+					}
+                }*/
+				signCertCN = "nonvalid_sign";
 
-            }
-
+			}
+			Console.WriteLine(signCertCN);
 			using (ClientProxy proxy = new ClientProxy(binding, address))
 			{
 				X509Certificate2 Cert = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, signCertCN);
-
+				if(Cert == null)
+                { Console.WriteLine("ALOO"); }
 				byte[] signature;
 
 				while(true)
@@ -80,7 +84,7 @@ namespace Client
 							text = Console.ReadLine();
 
 							signature = DigitalSignature.Create(text, HashAlgorithm.SHA1, Cert);
-							proxy.AddFile(filename, signature, text);
+							proxy.ChangeFile(filename, signature, text);
 							break;
 
 						case 0:
@@ -99,7 +103,7 @@ namespace Client
                 //proxy.ChangeFile("file.txt", "Moj NAJLEPSI FAJL");
             }
 
-			//Console.ReadLine();
+			Console.ReadLine();
 		}
 	}
 }

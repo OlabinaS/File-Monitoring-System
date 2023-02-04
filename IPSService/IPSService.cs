@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -45,9 +46,9 @@ namespace IPSService
         {
             Console.WriteLine("Critical");
             Audit.CriticalLog(alarm);
-            this.proxy.DeleteFile(alarm.Filename);
+            this.proxy.RemoveFile(alarm.Filename);
         }
-
+            
         public void LogInformation(Alarm alarm)
         {
             Console.WriteLine("Information");

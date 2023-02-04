@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>IPSService</RootNamespace>
     <AssemblyName>IPSService</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +63,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Manager\Manager.csproj">
+      <Project>{d5d20892-b864-40f7-be97-21b37d20ff73}</Project>
+      <Name>Manager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ServiceContracts\ServiceContracts.csproj">
       <Project>{51904a43-e6d9-41e9-b2fd-4210ee2124c1}</Project>
       <Name>ServiceContracts</Name>

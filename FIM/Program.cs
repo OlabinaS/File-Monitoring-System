@@ -18,12 +18,17 @@ namespace FIM
         public static string fimConfig = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "FimConfig.txt"));
         static void Main(string[] args)
         {
+            Console.ReadLine();
+            Thread thread = new Thread(() => CheckingFunction());
+            thread.Start();
+            Console.ReadLine();
 
         }
 
         public static void CheckingFunction()
         {
-            string srvCertCN = "ips";
+            string srvCertCN = "IPS";
+            Console.WriteLine("USAOOO23");
 
             NetTcpBinding binding = new NetTcpBinding();
             binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
