@@ -7,7 +7,6 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using Manager;
-using System.Security.Principal;
 
 namespace Client
 {
@@ -30,18 +29,20 @@ namespace Client
 
 				string[] gr = Convert.ToString(account.Value).Split('\\');
 				//nekiKod\ImeGrupe
-				/*if (gr.Count() > 1)
+				if (gr.Count() > 1)
                 {
 					if (gr[1] == "Valid" || gr[1] == "Nonvalid")
 					{
 						//ovde dodelimo vrednost subjectName-a na osnovu grupe kojoj korisnik pripada
 						signCertCN = gr[1].ToLower() + "_sign";
+						break;
 					}
-					else {
+					else
+					{
 						signCertCN = "NonExistingCert";
 					}
-                }*/
-				signCertCN = "nonvalid_sign";
+                }
+				//signCertCN = "valid_sign";
 
 			}
 			Console.WriteLine(signCertCN);
@@ -89,7 +90,7 @@ namespace Client
 
 						case 0:
 							Console.WriteLine("Press any key to exit");
-							Console.ReadLine();
+							Console.ReadKey();
 							break;
 
 						default:
@@ -97,13 +98,16 @@ namespace Client
 							break;
 					}
 
+					if (option == 0)
+						break;
+
 				}
 
                 //proxy.AddFile("file.txt", "Moj najlepsi fajl");
                 //proxy.ChangeFile("file.txt", "Moj NAJLEPSI FAJL");
             }
 
-			Console.ReadLine();
+			//Console.ReadLine();
 		}
 	}
 }
