@@ -44,7 +44,7 @@ namespace Manager
 		{
 			RSACryptoServiceProvider csp = (RSACryptoServiceProvider)certificate.PublicKey.Key;
 			UnicodeEncoding encoding = new UnicodeEncoding();
-
+			
 			byte[] data = encoding.GetBytes(message);
 			byte[] hash = null;
 
@@ -59,7 +59,7 @@ namespace Manager
 				hash = sha256.ComputeHash(data);
 			}
 
-			return csp.VerifyData(hash, CryptoConfig.MapNameToOID(hashAlgorithm.ToString()), signature);
+			return csp.VerifyHash(hash, CryptoConfig.MapNameToOID(hashAlgorithm.ToString()), signature);
 
 		}
 

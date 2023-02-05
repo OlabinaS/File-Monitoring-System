@@ -20,7 +20,7 @@ namespace FIM
         public Alarm VerifySignature(string name)
         {
             //izvlaci se sertifikat iz trusted people koji sluzi za validno potpisivanje
-            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "valid_sign");
+            X509Certificate2 certificate = CertificateManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, "valid_sign"); //ok_sign
 
             var lines = File.ReadLines(path + name);
 
@@ -48,44 +48,44 @@ namespace FIM
 
         }
 
-    private Alarm GetAlarm(string name)
-    {
-
-        switch (ReadEventLog(name))
+        private Alarm GetAlarm(string name)
         {
-            case -1:
-                return null;
 
-            case 0:
-                return new Alarm(DateTime.Now, path, AuditEventTypes.Information, name);
+            switch (ReadEventLog(name))
+            {
+                case -1:
+                    return null;
 
-            case 1:
-                return new Alarm(DateTime.Now, path, AuditEventTypes.Warning, name);
+                case 0:
+                    return new Alarm(DateTime.Now, path, AuditEventTypes.Information, name);
 
-            default:
-                return new Alarm(DateTime.Now, path, AuditEventTypes.Critical, name);
+                case 1:
+                    return new Alarm(DateTime.Now, path, AuditEventTypes.Warning, name);
+
+                default:
+                    return new Alarm(DateTime.Now, path, AuditEventTypes.Critical, name);
+            }
         }
-    }
 
 
-    public int ReadEventLog(string name)
-    {
-        try
+        public int ReadEventLog(string name)
         {
-            EventLog log = new EventLog { Log = "SBES-LOG-NAME" };
-            int count = 0;
+            try
+            {
+                EventLog log = new EventLog { Log = "SBESLogName2" };
+                int count = 0;
 
-            count = log.Entries
-                        .Cast<EventLogEntry>()
-                        .Count(entry => entry.Message.Contains("[" + name + "]"));
-            return count;
+				count = log.Entries.Cast<EventLogEntry>().Count(entry => entry.Message.Contains("[" + name + "]"));
+				
+
+                return count;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Reading log error: {0}", ex.Message);
+                return -1;
+            }
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Reading log error: {0}", ex.Message);
-            return -1;
-        }
-    }
 
     }
 }

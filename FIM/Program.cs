@@ -14,7 +14,7 @@ namespace FIM
 {
     public class Program
     {
-        //public static string pathConfig = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "FilesToCheck.txt"));
+        public static string pa = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "..\\Files\\"));
         public static string fimConfig = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())), "FimConfig.txt"));
         static void Main(string[] args)
         {
@@ -27,8 +27,7 @@ namespace FIM
 
         public static void CheckingFunction()
         {
-            string srvCertCN = "IPS";
-            Console.WriteLine("USAOOO23");
+            string srvCertCN = "ips"; //IPS
 
             NetTcpBinding binding = new NetTcpBinding();
             binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
@@ -39,7 +38,7 @@ namespace FIM
             
             try
             {
-                int msSleep = 3000;
+                int msSleep = 7000;
 
                 using (FimIPS proxy = new FimIPS(binding, address))
                 {
@@ -52,10 +51,14 @@ namespace FIM
 
                         filenames.ForEach(currentFilename =>
                         {
-                            Alarm alarm = service.VerifySignature(currentFilename);
+                            //Alarm al = new Alarm(DateTime.Now, pa, AuditEventTypes.Information, currentFilename);
+                            //proxy.LogInformation(al);
 
+                            Alarm alarm = service.VerifySignature(currentFilename);
+							
                             if (alarm != null)
                             {
+                                //Console.WriteLine($"{alarm.Filename}\t{alarm.Risk}");
                                 switch (alarm.Risk)
                                 {
                                     case AuditEventTypes.Critical:

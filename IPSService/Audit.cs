@@ -11,15 +11,17 @@ namespace IPSService
     public class Audit : IDisposable
     {
         private static EventLog customLog = null;
-        private const string SourceName = "SBES-AUDIT";
-        private const string LogName = "SBES-LOG-NAME";
+        const string SourceName = "IPSService.Audit";
+        const string LogName = "SBESLogName2";
 
         static Audit()
         {
             try
             {
-                if (!EventLog.SourceExists(SourceName))
+                
+                if (!EventLog.SourceExists(SourceName)){ 
                     EventLog.CreateEventSource(SourceName, LogName);
+                }
                 customLog = new EventLog(LogName, Environment.MachineName, SourceName);
             }
             catch (Exception e)
@@ -34,7 +36,7 @@ namespace IPSService
             if (customLog != null)
             {
                 string critical = AuditEvents.Critical;
-                string message = String.Format(critical, alarm.Filename, alarm.Path, alarm.TimeStamp.ToString());
+                string message = "Level: " + critical + "\nFile name: [" + alarm.Filename + "]\nPath: " + alarm.Path + "\nData and Time: " + alarm.TimeStamp.ToString();
                 customLog.WriteEntry(message, EventLogEntryType.Error);
             }
             else
@@ -49,7 +51,9 @@ namespace IPSService
             if (customLog != null)
             {
                 string information = AuditEvents.Information;
-                string message = String.Format(information, alarm.Filename, alarm.Path, alarm.TimeStamp.ToString());
+
+                string message = "Level: " + information + "\nFile name: [" + alarm.Filename + "]\nPath: " + alarm.Path + "\nData and Time: " + alarm.TimeStamp.ToString();
+
                 customLog.WriteEntry(message, EventLogEntryType.Information);
             }
             else
@@ -64,7 +68,9 @@ namespace IPSService
             if (customLog != null)
             {
                 string warning = AuditEvents.Warning;
-                string message = String.Format(warning, alarm.Filename, alarm.Path, alarm.TimeStamp.ToString());
+                //string message = String.Format(warning, alarm.Filename, alarm.Path, alarm.TimeStamp.ToString());
+                string message = "Level: " + warning + "\nFile name: [" + alarm.Filename + "]\nPath: " + alarm.Path + "\nData and Time: " + alarm.TimeStamp.ToString();
+
                 customLog.WriteEntry(message, EventLogEntryType.Warning);
             }
             else

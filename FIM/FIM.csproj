@@ -54,7 +54,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FilesToCheck.txt" />
     <Content Include="FimConfig.txt" />
   </ItemGroup>
   <ItemGroup>

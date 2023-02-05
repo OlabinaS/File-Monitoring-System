@@ -61,7 +61,7 @@ namespace IPSService {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Critical lvl:{0};  fileName:{1};  path:{2};  Date and Time:{3}.
+        ///   Looks up a localized string similar to Critical.
         /// </summary>
         internal static string Critical {
             get {
@@ -70,7 +70,7 @@ namespace IPSService {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Critical lvl:{0};  fileName:{1};  path:{2};  Date and Time:{3}.
+        ///   Looks up a localized string similar to Information.
         /// </summary>
         internal static string Information {
             get {
@@ -79,7 +79,7 @@ namespace IPSService {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Critical lvl:{0};  fileName:{1};  path:{2};  Date and Time:{3}.
+        ///   Looks up a localized string similar to Warning.
         /// </summary>
         internal static string Warning {
             get {

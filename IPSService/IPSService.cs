@@ -16,7 +16,7 @@ namespace IPSService
         {
             NetTcpBinding binding = new NetTcpBinding();
 
-            string address = "net.tcp://localhost:9999/FileManager";
+            string address = "net.tcp://localhost:9999/FileManagerService";
 
             binding.Security.Mode = SecurityMode.Transport;
             binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
@@ -46,6 +46,7 @@ namespace IPSService
         {
             Console.WriteLine("Critical");
             Audit.CriticalLog(alarm);
+
             this.proxy.RemoveFile(alarm.Filename);
         }
             

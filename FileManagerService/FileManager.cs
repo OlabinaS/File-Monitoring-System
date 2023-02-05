@@ -6,7 +6,6 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using ServiceContracts;
-using System.ServiceModel;
 using static System.Net.Mime.MediaTypeNames;
 using System.Security.Permissions;
 
@@ -50,7 +49,8 @@ namespace FileManagerService
         [PrincipalPermission(SecurityAction.Demand, Role = "Admin")]
         public void RemoveFile(string name)
         {
-            if (!File.Exists(Path.Combine(path, name)))
+
+            if (File.Exists(Path.Combine(path, name)))
             {
                 File.Delete(Path.Combine(path, name));
                 //izvlacimo one koji nisu izbrisani i s njima popunjavamo config

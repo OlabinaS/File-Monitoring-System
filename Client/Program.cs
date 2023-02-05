@@ -23,7 +23,7 @@ namespace Client
 			WindowsPrincipal principal = new WindowsPrincipal(identity);
 
 			//postoje 2 grupe korisnika valid i nonvalid
-			foreach(var group in identity.Groups)
+			foreach (var group in identity.Groups)
 			{
                 var account = (NTAccount)group.Translate(typeof(NTAccount));
 
@@ -45,12 +45,14 @@ namespace Client
 				//signCertCN = "valid_sign";
 
 			}
+
+			//signCertCN = "ok_sign";
+
 			Console.WriteLine(signCertCN);
 			using (ClientProxy proxy = new ClientProxy(binding, address))
 			{
 				X509Certificate2 Cert = CertificateManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, signCertCN);
-				if(Cert == null)
-                { Console.WriteLine("ALOO"); }
+
 				byte[] signature;
 
 				while(true)

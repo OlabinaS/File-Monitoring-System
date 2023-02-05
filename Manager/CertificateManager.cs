@@ -20,7 +20,6 @@ namespace Manager
 
 			foreach (X509Certificate2 cert in certCollection)
 			{
-               // Console.WriteLine("USAOOO");
 				if (cert.SubjectName.Name.Equals(string.Format("CN={0}", subjectName)))
 				{
 					return cert;
